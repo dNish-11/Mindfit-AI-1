@@ -70,10 +70,10 @@ if not st.session_state.authenticated:
 
 # Load environment variables
 
-
 # Set up Gemini client
-google.genai=get.api_key(GOOGLE_GENAI_API_KEY = "AIzaSyAl4rEdDYGSo0DL6Htl2sHmwP3tazBghmc"
-)
+# Set up Gemini client with hardcoded public API key
+client = genai.Client(api_key="AIzaSyAl4rEdDYGSo0DL6Htl2sHmwP3tazBghmc")
+
 
 # Set up emotion detection pipeline
 emotion_classifier = pipeline("text-classification", model="bhadresh-savani/distilbert-base-uncased-emotion", top_k=1)
