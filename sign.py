@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 import json
 from google import genai
 from transformers import pipeline
-import re
+import re 
 
 # ⛳ Set page config IMMEDIATELY after imports
 st.set_page_config(page_title=" 🧠 Mindfit AI Companion", layout="wide")
