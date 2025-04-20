@@ -6,7 +6,7 @@ def create_users_table():
     c = conn.cursor()
     c.execute('''CREATE TABLE IF NOT EXISTS users (
                     username TEXT PRIMARY KEY,
-                    password TEXT,
+                    password TEXT, 
                     age INTEGER
                 )''')
     conn.commit()
