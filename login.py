@@ -7,7 +7,7 @@ st.markdown("<h1 style='text-align: center;'>🛡 Welcome to Secure Portal</h1>"
 st.markdown("### Please Sign In or Sign Up below:")
 
 # Tabs for Sign In and Sign Up
-tab1, tab2 = st.tabs(["🔐 Sign In", "🆕 Sign Up"])
+tab1, tab2 = st.tabs(["🔐 Sign In", "🆕 Sign Up"]) 
 
 # --- Sign In Tab ---
 with tab1:
